@@ -17,6 +17,7 @@ ail_trim = stick.hat_switch(hat=0, axis=0, positions=41, initial=20)
 PPM_OUTPUT_PIN = 18
 
 # Output (PPM) channels.
+# we only need 3 channels, steering wheel, gas pedal, brake pedal
 CHANNELS = (
     # channel 1: aileron with trim
     stick.axis(0) + ail_trim * 0.5,
@@ -36,6 +37,7 @@ CHANNELS = (
     stick.button(3),
 )
 
+"""
 # dual-channel display component
 stick_dot = XYDot(col=5)
 
@@ -58,3 +60,4 @@ DISPLAY = (
 
 # TODO what's the range? 128? http://www.issi.com/WW/pdf/31FL3730.pdf
 DISPLAY_BRIGHTNESS = 10
+"""
